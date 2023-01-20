@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8432728275462614545}
   - component: {fileID: 8432728275462614544}
+  - component: {fileID: 7946614075524917483}
   m_Layer: 5
   m_Name: Toggle 1
   m_TagString: Untagged
@@ -161,8 +162,32 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7946614075524917483}
+        m_TargetAssemblyTypeName: TogglePref, Assembly-CSharp
+        m_MethodName: TogglePrefValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
+--- !u!114 &7946614075524917483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8432728275462614546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7489030140ce040ae05f0a949ee35e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8432728275955707919
 GameObject:
   m_ObjectHideFlags: 0
